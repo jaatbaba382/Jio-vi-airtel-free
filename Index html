@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Recharge Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mobile Recharge Portal</h1>
+    </header>
+    <div class="container">
+        <!-- Operator Selection -->
+        <div class="operator-selection">
+            <label for="operator">Select Operator:</label>
+            <select id="operator" onchange="showPlans()">
+                <option value="">--Select--</option>
+                <option value="jio">Jio</option>
+                <option value="airtel">Airtel</option>
+                <option value="vi">Vi</option>
+            </select>
+        </div>
+        <!-- Recharge Plans -->
+        <div id="plans" class="plans"></div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Mobile Recharge Portal. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
